@@ -1,0 +1,25 @@
+/* Minimal typography for content area */
+html, body { font-family: "Lora", Georgia, serif; }
+.prose { max-width: 65ch; }
+.prose h1, .prose h2, .prose h3 { color: #111827; line-height: 1.25; margin: 1.5rem 0 .75rem; font-weight: 700; font-family: "Open Sans", Arial, sans-serif; }
+.prose p { margin: 1rem 0; color: #111827; }
+.prose a { color: #1d4ed8; text-decoration: underline; }
+.prose ul, .prose ol { margin: 1rem 0 1rem 1.25rem; }
+.prose li { margin: .25rem 0; }
+.prose img { max-width: 100%; height: auto; }
+/* Typography to match Colinear */
+.site-title { font-family: "Open Sans", sans-serif; font-size: 40px; line-height: 1.2; color: #111827; font-weight: 700; }
+.site-description { color: #4b5563; font-size: 0.95rem; }
+code, pre { font-family: Inconsolata, Menlo, Consolas, monospace; }
+
+/* Colinear-like nav with submenu */
+.colinear-nav { border-top: 1px solid #ccc; border-bottom: 3px solid #222; margin: 24px 0; padding-top: 1px; }
+.colinear-nav .menu { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+.colinear-nav .menu > li { position: relative; }
+.colinear-nav .nav-link { color: inherit; display: block; padding: 6px 24px; }
+.colinear-nav .menu > li:hover > .nav-link, .colinear-nav .nav-link.active, .colinear-nav .menu > li.ancestor-active > .nav-link { background: #222; color: #fff; }
+.colinear-nav .sub-menu { position: absolute; left: -999em; top: 100%; background: #222; margin: 0; padding: 0; min-width: 240px; z-index: 50; }
+.colinear-nav .sub-menu .nav-link { color: #fff; padding: 6px 24px; }
+.colinear-nav .sub-menu li { list-style: none; border-bottom: 1px solid #444; }
+.colinear-nav .menu > li:hover > .sub-menu { left: 0; }
+.colinear-nav .sub-menu .nav-link:hover, .colinear-nav .sub-menu .nav-link:focus { background: #000; color: #aaa; }
